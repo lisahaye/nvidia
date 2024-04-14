@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/proposer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        .pop-up {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .pop-up>div {
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .pop-up>div>h2 {
+            margin:  5px 0;
+        }
+        .pop-up>div button {
+            padding: 5px;
+            border: 2px solid var(--active-color);
+            color:white;
+            background-color:var(--active-color);
+
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="">
+            <img src="img/nvidia-logo.webp" height="50px" alt="Nvidia">
+        </a>
+        <div>
+            <ul>
+                <li><a href="louer.html">Louer un véhicule propre</a></li>
+                <li><a href="proposer.html">Porposer un itinéraire</a></li>
+                <li><a href="rechercher.html">Rechercher un itinéraire</a></li>
+            </ul>
+            <button id="menubtn">
+                <img src="img/dots.svg" alt="dote">
+                Menu
+            </button>
+            <button onclick="document.location.href = 'rechercher.html'">
+                <img src="img/sreach.svg" alt="sreach">
+                Recherche
+            </button>
+        </div>
+    </header>
+    
+    <nav id="menu" style="right: -300px;">
+        <div>
+            <h2>Menu</h2>
+            <button id="closebtn">X</button>
+        </div>
+
+        <ul>
+            <li>
+                <h3>Besoin</h3>
+            </li>                
+            <li><a href="louer.html">Louer un véhicule propre</a></li>
+            <li><a href="rechercher.html">Rechercher un itinéraire</a></li>
+            <li><a href="proposer.html">Porposer un itinéraire</a></li>
+            <li>
+                <h3>Vous</h3>
+            </li>
+            <li><a href="meslouer.html">Mes itinéraire partagé</a></li>
+            
+        </ul>
+    </nav>
+    <script>
+        closebtn.onclick = function(){
+            document.getElementById("menu").style.right = "-300px";
+        };
+        menubtn.onclick = function(){
+            document.getElementById("menu").style.right = "0px";
+        };
+    </script>
+
+    <main>
+        <section>
+            <h2>Porposer un itinéraire</h2>
+        </section>
+        <section>
+            <div>
+                Vous pouvez ici si vous le désirez proposer aux autres salariés de faire du covoiturage en définissant votre trajet fait en fonction des jours de la semaine et en indiquant les horaires
+            </div>
+            <ul>
+                <li>
+                    <label for="name">Nom <strong>* obligatoire</strong></label>
+                    <input type="text" name="name" id="">
+                </li>
+                <li>
+                    <label for="surname">Prenom <strong>* obligatoire</strong></label>
+                    <input type="text" name="name" id="">
+                </li>
+                <li>
+                    <label for="email">E-mail <strong>* obligatoire</strong></label>
+                    <input type="email" name="email" id="">
+                </li>
+                <li>
+                    <label for="type">Type de Véhicule <strong>* obligatoire</strong></label>
+                    <div>
+                        <input type="radio" name="Véhicule " id="">
+                        Velo
+                    </div>
+                    <div>
+                        <input type="radio" name="Véhicule " id="">
+                        Skate
+                    </div>
+                    <div>
+                        <input type="radio" name="Véhicule " id="">
+                        Trotinette
+                    </div>
+                    <div>
+                        <input type="radio" name="Véhicule " id="">
+                        Roller
+                    </div>
+                    <div>
+                        <input type="radio" name="Véhicule " id="">
+                        Voiture
+                    </div>                    
+                </li>
+                <li>
+                    <label for="type">Énergie du Véhicule <strong>* obligatoire</strong></label>
+                    <div>
+                        <input type="radio" name="type" id="">
+                        Électrique
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="">
+                        Physique
+                    </div>                  
+                </li>
+                <li>
+                    <label for="where">Lieu de départ <strong>* obligatoire</strong></label>
+                    <input type="text" name="where" id="">
+                </li>
+                <li>
+                    <label for="where">Heure de départ <strong>* obligatoire</strong></label>
+                    <input type="time" name="time" id="">
+                </li>
+                <li>
+                    <label for="date">Jour pour lequel le trajet est effecté <strong>* obligatoire</strong></label>
+                    <input type="date" name="date" id="">
+                </li>
+                <li>
+                    <label for="price">Prix <strong>* obligatoire</strong></label>
+                    <input type="number" name="price" id="">
+                </li>
+                <li>
+                    <label for="information">Information supplémentaires</label>
+                    <input type="text" name="date" id="">
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div>
+                <a href="louer.html">Annuler</a>
+                <a href="valide.html">Valider</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><img src="img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/twitter.svg" alt="twitter"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/twitch.svg" alt="twitch"></a>
+            </li>
+        </ul>
+        <div>
+            <div>
+                <h2>À propos de ce site</h2>
+                <p>Ce site permet de trouver facilement un covoiturage, de louer un véhicule propre ou encore de proposer un trajet en covoiturage afin de faciliter les déplacements des salariés jusqu'à leur lieu de travail.</p>
+            </div>
+            <div>
+                <h2>Retrouvez-nous</h2>
+                <ul>
+                    <li><strong>Téléphone</strong> <br>+1(408)486-2000</li>
+                    <li><strong>Adresse</strong> <br> 2788 San Tomas Expressway Santa Clara, CA 95051, États-Unis.</li>
+                    <li><strong>Heures d'ouverture</strong> <br> Lundi : 09:00 - 18:00 <br> Mardi au Vendredi : 08:00 - 17:00 <br> Samedi et Dimanche : Fermé</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div>
+            <p>
+                <strong>©2022 Nvidia</strong> 
+                Porpulsé par IUT A
+            </p>
+            <a href="#header">Vers le haut ⇑</a>
+        </div>
+        
+    </footer>
+</body>
+</html>

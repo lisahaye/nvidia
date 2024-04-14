@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/recherche.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header id="header">
+        <a href="">
+            <img src="img/nvidia-logo.webp" height="50px" alt="Nvidia">
+        </a>
+        <div>
+            <ul>
+                <li><a href="louer.html">Louer un véhicule propre</a></li>
+                <li><a href="proposer.html">Porposer un itinéraire</a></li>
+                <li><a href="rechercher.html">Rechercher un itinéraire</a></li>
+            </ul>
+            <button id="menubtn">
+                <img src="img/dots.svg" alt="dote">
+                Menu
+            </button>
+            <button onclick="document.location.href = 'rechercher.html'">
+                <img src="img/sreach.svg" alt="sreach">
+                Recherche
+            </button>
+        </div>
+    </header>
+    
+    <nav id="menu" style="right: -300px;">
+        <div>
+            <h2>Menu</h2>
+            <button id="closebtn">X</button>
+        </div>
+
+        <ul>
+            <li>
+                <h3>Besoin</h3>
+            </li>                
+            <li><a href="louer.html">Louer un véhicule propre</a></li>
+            <li><a href="rechercher.html">Rechercher un itinéraire</a></li>
+            <li><a href="proposer.html">Porposer un itinéraire</a></li>
+            <li>
+                <h3>Vous</h3>
+            </li>
+            <li><a href="meslouer.html">Mes itinéraire partagé</a></li>
+            
+        </ul>
+    </nav>
+    <script>
+        closebtn.onclick = function(){
+            document.getElementById("menu").style.right = "-300px";
+        };
+        menubtn.onclick = function(){
+            document.getElementById("menu").style.right = "0px";
+        };
+    </script>
+
+    <main>
+        <section>
+            <h2>Rechercher un itinéraire</h2>
+        </section>
+        <section >
+            <div>
+                Vous pouvez sur cette page effectuer une recherche des trajets disponibles pour le covoiturage en fonction du lieux de départ, du jour et de l'heure souhaité.
+            </div>
+            <div>
+                <input type="text" placeholder="Taper votre recherche ici">
+                <input type="button" value="⇒">
+            </div>
+            <ul>
+                <li>
+                    <div style="background-image: url(img/voiture.jpeg);" ></div>
+                    <div>
+                        <h2>Voiture</h2>
+                        <p>9€</p>
+                        <p>4 rue trudaine, villeneuve d'ascq 59650</p>
+                        <p>03/01/2023 08:30</p>
+                    </div>
+                    <a href="anouce.html">
+                        Voir l'itinéraire
+                    </a>
+                </li>
+                <li>
+                    <div style="background-image: url(img/voiture.jpeg);" ></div>
+                    <div>
+                        <h2>Voiture</h2>
+                        <p>9€</p>
+                        <p>4 rue trudaine, villeneuve d'ascq 59650</p>
+                        <p>03/01/2023 08:30</p>
+                    </div>
+                    <a href="anouce.html">
+                        Voir l'itinéraire
+                    </a>
+                </li>
+                <li>
+                    <div style="background-image: url(img/voiture.jpeg);" ></div>
+                    <div>
+                        <h2>Voiture</h2>
+                        <p>9€</p>
+                        <p>4 rue trudaine, villeneuve d'ascq 59650</p>
+                        <p>03/01/2023 08:30</p>
+                    </div>
+                    <a href="anouce.html">
+                        Voir l'itinéraire
+                    </a>
+                </li>
+                <li>
+                    <div style="background-image: url(img/voiture.jpeg);" ></div>
+                    <div>
+                        <h2>Voiture</h2>
+                        <p>9€</p>
+                        <p>4 rue trudaine, villeneuve d'ascq 59650</p>
+                        <p>03/01/2023 08:30</p>
+                    </div>
+                    <a href="anouce.html">
+                        Voir l'itinéraire
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <button>Précédant</button>
+                <input type="number" value="1">
+                <button>Suivant</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><img src="img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/twitter.svg" alt="twitter"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/twitch.svg" alt="twitch"></a>
+            </li>
+        </ul>
+        <div>
+            <div>
+                <h2>À propos de ce site</h2>
+                <p>Ce site permet de trouver facilement un covoiturage, de louer un véhicule propre ou encore de proposer un trajet en covoiturage afin de faciliter les déplacements des salariés jusqu'à leur lieu de travail.</p>
+            </div>
+            <div>
+                <h2>Retrouvez-nous</h2>
+                <ul>
+                    <li><strong>Téléphone</strong> <br>+1(408)486-2000</li>
+                    <li><strong>Adresse</strong> <br> 2788 San Tomas Expressway Santa Clara, CA 95051, États-Unis.</li>
+                    <li><strong>Heures d'ouverture</strong> <br> Lundi : 09:00 - 18:00 <br> Mardi au Vendredi : 08:00 - 17:00 <br> Samedi et Dimanche : Fermé</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div>
+            <p>
+                <strong>©2022 Nvidia</strong> 
+                Porpulsé par IUT A
+            </p>
+            <a href="#header">Vers le haut ⇑</a>
+        </div>
+        
+    </footer>
+</body>
+</html>

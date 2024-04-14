@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/louer.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header id="header">
+        <a href="">
+            <img src="img/nvidia-logo.webp" height="50px" alt="Nvidia">
+        </a>
+        <div>
+            <ul>
+                <li><a href="louer.html">Louer un véhicule propre</a></li>
+                <li><a href="proposer.html">Porposer un itinéraire</a></li>
+                <li><a href="rechercher.html">Rechercher un itinéraire</a></li>
+            </ul>
+            <button id="menubtn">
+                <img src="img/dots.svg" alt="dote">
+                Menu
+            </button>
+            <button onclick="document.location.href = 'rechercher.html'">
+                <img src="img/sreach.svg" alt="sreach">
+                Recherche
+            </button>
+        </div>
+    </header>
+    
+    <nav id="menu" style="right: -300px;">
+        <div>
+            <h2>Menu</h2>
+            <button id="closebtn">X</button>
+        </div>
+
+        <ul>
+            <li>
+                <h3>Besoin</h3>
+            </li>                
+            <li><a href="louer.html">Louer un véhicule propre</a></li>
+            <li><a href="rechercher.html">Rechercher un itinéraire</a></li>
+            <li><a href="proposer.html">Porposer un itinéraire</a></li>
+            <li>
+                <h3>Vous</h3>
+            </li>
+            <li><a href="meslouer.html">Mes itinéraire partagé</a></li>
+            
+        </ul>
+    </nav>
+    <script>
+        closebtn.onclick = function(){
+            document.getElementById("menu").style.right = "-300px";
+        };
+        menubtn.onclick = function(){
+            document.getElementById("menu").style.right = "0px";
+        };
+    </script>
+
+    <main>
+        <section>
+            <h2>Louer un veichule propre</h2>
+        </section>
+        <section>
+            <h2>Choisissez votre moyen de tranport écologique</h2>
+            <ul>
+                <li>
+                    <div style="background-image: url('img/velo.jpg');"></div>
+                    <h3>Vélo <strong>éléctrique/physique</strong></h3>
+                    <a href="https://www.kiwiiz.fr/location-particuliers/materiel-sportif/velos/">Voir les Offres</a>
+                </li>
+                <li>
+                    <div style="background-image: url('img/skateboard.jpg');"></div>
+                    <h3>Skate <strong>éléctrique/physique</strong></h3>
+                    <a href="https://www.lyon69location.com/location-skate-electrique">Voir les Offres</a>
+                </li>
+                <li>
+                    <div style="background-image: url('img/roller.jpg');"></div>
+                    <h3>Roller <strong>physique</strong></h3>
+                    <a href="https://www.kiwiiz.fr/location-particuliers/materiel-sportif/roller/">Voir les Offres</a>
+                </li>
+                <li>
+                    <div style="background-image: url('img/trottinette.jpg');"></div>
+                    <h3>Trottinette <strong>éléctrique/physique</strong></h3>
+                    <a href="https://www.kiwiiz.fr/location-particuliers/materiel-sportif/trottinette/">Voir les Offres</a>
+                </li>
+                <li>
+                    <div style="background-image: url('img/voiture.jpeg');"></div>
+                    <h3>Voiture <strong>éléctrique</strong></h3>
+                    <a href="https://www.kiwiiz.fr/location-particuliers/voiture/voitures/">Voir les Offres</a>
+                </li>
+            </ul>
+        </section>
+        <section style="background-image: url(img/fond.jpg);"> </section>
+        <section>
+            <h2>Accéleration de la transition vers un futur durable</h2>
+            <p>Des entreprises majeures du secteur énergétique font appel aux technologies de NVIDIA pour transformer l’industrie et améliorer la qualité de vie dans le monde entier. La recherche de sources d’énergie renouvelables, la mise en œuvre de réseaux électriques plus intelligents et plus résilients, la réduction des délais d’exploration et de production d’énergie, sans oublier la sécurité accrue des travailleurs et des communautés, sont autant de paramètres qui nous aident à bâtir un futur plus radieux et durable.</p>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><img src="img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/twitter.svg" alt="twitter"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+                <a href=""><img src="img/twitch.svg" alt="twitch"></a>
+            </li>
+        </ul>
+        <div>
+            <div>
+                <h2>À propos de ce site</h2>
+                <p>Ce site permet de trouver facilement un covoiturage, de louer un véhicule propre ou encore de proposer un trajet en covoiturage afin de faciliter les déplacements des salariés jusqu'à leur lieu de travail.</p>
+            </div>
+            <div>
+                <h2>Retrouvez-nous</h2>
+                <ul>
+                    <li><strong>Téléphone</strong> <br>+1(408)486-2000</li>
+                    <li><strong>Adresse</strong> <br> 2788 San Tomas Expressway Santa Clara, CA 95051, États-Unis.</li>
+                    <li><strong>Heures d'ouverture</strong> <br> Lundi : 09:00 - 18:00 <br> Mardi au Vendredi : 08:00 - 17:00 <br> Samedi et Dimanche : Fermé</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div>
+            <p>
+                <strong>©2022 Nvidia</strong> 
+                Porpulsé par IUT A
+            </p>
+            <a href="#header">Vers le haut ⇑</a>
+        </div>
+        
+    </footer>
+</body>
+</html>

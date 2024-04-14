@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+header div {
+    display: flex;
+}
+header ul {
+    list-style: none;
+    padding-right: 15px;
+    display: flex;
+    align-items: center ;
+    height: 50px;
+    border-right: 1.5px solid rgb(119, 119, 119);
+}
+header ul>li {
+    margin: 0 5px;
+}
+
+header a{
+    color: var(--active-color);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    header>div>ul {
+      display: none;
+    }
+  }
+header a:hover,header button:hover {
+    text-decoration: underline;
+    
+}
+header div>button {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+header div>button>img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    margin: 0 10px;
+}
+header button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+nav {
+    transition: 0.25s;
+    
+    border-left: 2px solid var(--active-color);
+    position: fixed;
+    top: 0px;
+    width: 298px;
+    height: 100%;
+    z-index: 2;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav div{
+    display: flex;
+    width: calc(100% - 10px);
+    justify-content: space-between;
+    align-items: center ;
+}
+nav div button{
+    color: rgb(152, 152, 152);
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+nav div button:hover{
+    color: red;
+}
+nav ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+nav a{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-left: 0px solid var(--active-color);
+    transition: 0.25s;padding-left: 5px;
+}
+nav a:hover{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--active-color);
+    border-left: 7px solid var(--active-color);
+}
+nav h3 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
